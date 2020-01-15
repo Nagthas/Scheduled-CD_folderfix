@@ -99,6 +99,7 @@ socket.on("centerTextContent", function(data){
         //  6larm
         if (countDownTimeInMS > sixMinuteMs && countDownTimeInMS < (sixMinuteMs + timeBuffer)) {
           document.getElementById('musiclong6').play();
+          console.log(countDownTimeInMS)
         }
         // 5min Alarm
         if (countDownTimeInMS > fiveMinuteMs && countDownTimeInMS < (fiveMinuteMs + timeBuffer)) {
