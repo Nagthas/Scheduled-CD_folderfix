@@ -35,7 +35,7 @@ var getNetworkIPs = (function () {
         // filterRE = /\binet6\s+([^\s]+)/g; // IPv6
         break;
     default:
-        command = 'ifconfig';
+        command = 'ipconfig';
         filterRE = /\binet\b[^:]+:\s*([^\s]+)/g;
         // filterRE = /\binet6[^:]+:\s*([^\s]+)/g; // IPv6
         break;
