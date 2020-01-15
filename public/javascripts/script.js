@@ -95,11 +95,15 @@ socket.on("centerTextContent", function(data){
         var oneMinuteMs   = (1*1000*60);
         countDownTimeInMS += offsetTimeInit
 
-
+          console.log("TestTEst")
+          console.log(countDownTimeInMS);
+          console.log(sixMinuteMs);
+          console.log(countDownTimeInMS);
+          console.log(timeBuffer);
         //  6larm
         if (countDownTimeInMS > sixMinuteMs && countDownTimeInMS < (sixMinuteMs + timeBuffer)) {
           document.getElementById('musiclong6').play();
-          console.log(countDownTimeInMS)
+
         }
         // 5min Alarm
         if (countDownTimeInMS > fiveMinuteMs && countDownTimeInMS < (fiveMinuteMs + timeBuffer)) {
