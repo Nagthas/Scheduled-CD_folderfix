@@ -5,11 +5,11 @@ const fs = require('fs');
 var scheduledTimes = require('../public/scheduledTimes.json');
 var scheduledTimesBackup = require('../public/scheduledTimes-backup.json');
 var variables = require('../public/variables.json');
-// var myipjson = require('../public/myip.json');
+var myipjson = require('../public/myip.json');
 const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
 //console.log(variables.offsetTime);
-// var myIpArray= [];
-// var myLocalip = myipjson.myIp+":3000";
+var myIpArray= [];
+var myLocalip = myipjson.myIp+":3000";
 //--------------------------------------------------
 
 //--------------------------------------------------
