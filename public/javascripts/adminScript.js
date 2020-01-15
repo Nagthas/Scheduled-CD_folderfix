@@ -10,7 +10,7 @@ var cueTimeText = document.getElementById("cueTime");
 var setTimeoutTime = 150;
 var myIpArrayBool = 0;
 
-var myLocalip = document.getElementById("myLocalip").textContent;
+var myLocalip = "https://floating-savannah-55816.herokuapp.com/";
 //var myLocalipAndPort = myLocalip + ":3000"
 var myLocalipAndPort = myLocalip
 console.log(myLocalipAndPort);

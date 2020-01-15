@@ -9,7 +9,7 @@ var variables = require('../public/variables.json');
 const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
 //console.log(variables.offsetTime);
 // var myIpArray= [];
-var myLocalip = "0.0.0.0:5000";
+var myLocalip = "https://floating-savannah-55816.herokuapp.com/";
 //--------------------------------------------------
 
 //--------------------------------------------------
@@ -302,7 +302,7 @@ router.post('/admin/setLoopbackip', function(req, res, next){
     }
     console.log("mycustomip:"+mycustomip.myIp);
 
-    mycustomip.myIp = "0.0.0.0";
+    mycustomip.myIp = "https://floating-savannah-55816.herokuapp.com/";
 
   fs.writeFile('./public/myip.json', JSON.stringify(mycustomip, null,4), (err) => {
         if (err) console.log('Error writing file:', err)

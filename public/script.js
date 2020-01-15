@@ -1,6 +1,6 @@
 "use strict";
 
-var myLocalip = document.getElementById("myLocalip").textContent;
+var myLocalip = "https://floating-savannah-55816.herokuapp.com/";
 var myLocalipAndPort = myLocalip+":5000"
 console.log(myLocalipAndPort);
 
